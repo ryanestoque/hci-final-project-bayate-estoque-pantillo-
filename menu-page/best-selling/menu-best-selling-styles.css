@@ -1,0 +1,471 @@
+@font-face {
+  font-family: "Saira Stencil One";
+  src: url(../../fonts/SairaStencilOne-Regular.ttf);
+}
+
+/* .saira-stencil-one-regular {
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+h1, button, p, nav, .food-1, .food-2, .food-3, .food-4, .food-5, .food-6 {
+  font-family: "Saira Stencil One", sans-serif;
+}
+
+body {
+  background-image: url(../../backgrounds/menu-background.png);
+}
+
+nav {
+  padding: 0px;
+  margin: auto;
+  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 10px 15px;
+  text-align: center;
+}
+
+nav button {
+  font-size: 13px;
+  color: #CA5331;
+  background-color: #F4E5D2;
+  border: solid 3px #CA5331;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+nav button:hover{
+  background-color: #F1F2F3;
+}
+
+nav button:active{
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.left-nav {
+  padding: 4px 25px;
+}
+
+.right-nav {
+  padding: 4px 20px;
+}
+
+.logo {
+  color: #CA5331;
+  font-size: 40px;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.logo:active {
+  opacity: 0.8;
+}
+
+.categories-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+nav .categories-container a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #F4E5D2;
+}
+
+nav .categories-container ul li {
+  margin: 20px 28px;
+  text-align: center;
+}
+
+nav .menu-title {
+  display: inline-block;
+  font-size: xx-large;
+  color: #F4E5D2;
+  text-shadow: 0px 4px 0px #CA5331;
+  -webkit-text-stroke: 0.5px #CA5331
+}
+
+nav .menu-title:hover {
+  color: #F1F2F3;
+}
+
+nav .menu-title:active {
+  transform: translateY(4px);
+  text-shadow: none;
+}
+
+nav .category {
+  display: inline-block;
+  font-size: large;
+  text-shadow: 0px 4px 0px #CA5331;
+  -webkit-text-stroke: 0.5px #CA5331;
+  transition: opacity 0.15s;
+}
+
+nav .category:hover {
+  color: #F1F2F3;
+}
+
+nav .category:active {
+  transform: translateY(4px);
+  text-shadow: none;
+}
+
+.menu-container-1, .menu-container-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-container-1 .dotted-line, .menu-container-2 .dotted-line {
+  display: block;
+  max-width: 90%;
+  transform: translateY(-30px);
+}
+
+
+.menu-container-2 {
+  padding-bottom: 100px;
+}
+
+.food-1, .food-2, .food-3, .food-4, .food-5, .food-6 {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  background-color: #F4E5D2;
+  border: solid 3px #CA5331;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: #CA5331;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.food-1:hover, .food-2:hover, .food-3:hover, .food-4:hover, .food-5:hover, .food-6:hover {
+  transform: translateY(-20px);
+}
+
+/* .food-1:active, .food-2:active, .food-3:active, .food-4:active, .food-5:active, .food-6:active {
+  background-color: #F1F2F3;
+} */
+
+.food-1 .food-content, .food-2 .food-content, .food-3 .food-content, .food-4 .food-content, .food-5 .food-content, .food-6 .food-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-1 img {
+  display: block;
+  max-width: 70%;
+  transform: translateY(-10px);
+}
+
+.food-2 img {
+  display: block;
+  max-width: 70%;
+  transform: translateY(-50px);
+}
+
+.food-3 img {
+  display: block;
+  max-width: 60%;
+  transform: translateY(-10px);
+}
+
+.food-4 img {
+  display: block;
+  max-width: 47%;
+  transform: translateY(-50px);
+}
+
+.food-5 img {
+  display: block;
+  max-width: 60%;
+  transform: translateY(-60px);
+}
+
+.food-6 img {
+  display: block;
+  max-width: 60%;
+  transform: translateY(-60px);
+}
+
+.food-name {
+  transform: translateY(-40px);
+}
+
+.food-price {
+  display: flex;
+  gap: 90px;
+  font-size: 1.4rem;
+  transform: translateY(-15px);
+}
+
+.food-price button {
+  color: #CA5331;
+  padding: 5px 20px;
+  border: solid 3px #CA5331;
+  border-radius: 10px;
+  background-color: #F4E5D2;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.food-price button:hover {
+  background-color: #F1F2F3;
+}
+
+.food-price button:active {
+  background-color: #F4E5D2;
+}
+
+#overlay-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 98;
+}
+
+#x-button {
+  cursor: pointer;
+  transition: opacity 0.15s;
+  max-width: 3%;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+#x-button:hover {
+  opacity: 0.8;
+}
+
+#x-button:active {
+  opacity: 0.6;
+}
+
+#sinuglaw-overlay, #pork-siomai-overlay, #mango-shake-overlay, #siopao-overlay, #tapsilog-overlay, #french-fries-overlay {
+  display: none;
+  position: fixed;
+  width: 854px;
+  height: 480px;
+  background-color: #F4E5D2;
+  border: solid 5px #CA5331;
+  z-index: 100;
+  top: 90px;
+  border-radius: 30px;
+  /* box-shadow: 0px 0px 0px 1000px rgba(0, 0, 0, 0.5); */
+}
+
+.sinuglaw-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pork-siomai-container {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.mango-shake-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.siopao-container {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.tapsilog-container {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.french-fries-container {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#sinuglaw-overlay .column-left, #pork-siomai-overlay .column-left, #mango-shake-overlay .column-left, #siopao-overlay .column-left, #tapsilog-overlay .column-left, #french-fries-overlay .column-left {
+  flex: 1;
+}
+
+#sinuglaw-overlay .column-left img {
+  max-width: 90%;
+  margin-left: 15%;
+}
+
+#pork-siomai-overlay .column-left img {
+  max-width: 90%;
+  margin-left: 15%;
+}
+
+#mango-shake-overlay .column-left img {
+  max-width: 80%;
+  margin-left: 10%;
+  transform: translateY(-10px);
+}
+
+#siopao-overlay .column-left img {
+  max-width: 65%;
+  margin-left: 25%;
+}
+
+#tapsilog-overlay .column-left img {
+  max-width: 85%;
+  margin-left: 15%;
+}
+
+#french-fries-overlay .column-left img {
+  max-width: 85%;
+  margin-left: 15%;
+}
+
+#sinuglaw-overlay .column-right {
+  font-family: "Saira Stencil One";
+  color: #CA5331;
+  align-items: left;
+  flex: 1;
+  margin-left: 70px;
+}
+
+#pork-siomai-overlay .column-right {
+  font-family: "Saira Stencil One";
+  color: #CA5331;
+  align-items: left;
+  flex: 1;
+  margin-left: 70px;
+}
+
+#mango-shake-overlay .column-right {
+  font-family: "Saira Stencil One";
+  color: #CA5331;
+  align-items: left;
+  margin-left: 20px;
+  flex: 1;
+}
+
+#siopao-overlay .column-right {
+  font-family: "Saira Stencil One";
+  color: #CA5331;
+  align-items: left;
+  margin-left: 40px;
+  flex: 1;
+}
+
+#tapsilog-overlay .column-right {
+  font-family: "Saira Stencil One";
+  color: #CA5331;
+  align-items: left;
+  margin-left: 70px;
+  flex: 1;
+}
+
+#french-fries-overlay .column-right {
+  font-family: "Saira Stencil One";
+  color: #CA5331;
+  align-items: left;
+  margin-left: 70px;
+  flex: 1;
+}
+
+.sinuglaw-name, .pork-siomai-name, .mango-shake-name, .siopao-name, .tapsilog-name, .french-fries-name {
+  font-size: xxx-large;
+}
+
+.sinuglaw-price, .pork-siomai-price, .mango-shake-price, .siopao-price, .tapsilog-price, .french-fries-price {
+  font-size: x-large;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.sinuglaw-desc, .pork-siomai-desc, .mango-shake-desc, .siopao-desc, .tapsilog-desc, .french-fries-desc {
+  font-size: large;
+  width: 350px;
+}
+
+.order-container button {
+  font-size: small;
+  padding: 10px 15px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: solid 3px #CA5331;
+  color: #CA5331;
+  border-radius: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.order-container button:hover {
+  background-color: #F1F2F3;
+}
+
+.order-container button:active {
+  opacity: 0.9;
+}
+
+.order-container input {
+  font-size: large;
+  padding: 5px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: solid 3px #CA5331;
+  color: #CA5331;
+  font-family: "Saira Stencil One";
+  border-radius: 10px;
+}
+
+.order-container input::-webkit-inner-spin-button {
+  opacity: 1;
+}

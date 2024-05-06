@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Saira Stencil One";
+  src: url(../../fonts/SairaStencilOne-Regular.ttf);
+}
+
+/* .saira-stencil-one-regular {
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+h1, button, p, nav, .food-1, .food-2, .food-3, .food-4, .food-5, .food-6 {
+  font-family: "Saira Stencil One", sans-serif;
+}
+
+body {
+  background-image: url(../../backgrounds/menu-background.png);
+}
+
+nav {
+  padding: 0px;
+  margin: auto;
+  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 10px 15px;
+  text-align: center;
+}
+
+nav button {
+  font-size: 13px;
+  color: #CA5331;
+  background-color: #F4E5D2;
+  border: solid 3px #CA5331;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+nav button:hover{
+  background-color: #F1F2F3;
+}
+
+nav button:active{
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.left-nav {
+  padding: 4px 25px;
+}
+
+.right-nav {
+  padding: 4px 20px;
+}
+
+.logo {
+  color: #CA5331;
+  font-size: 40px;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.logo:active {
+  opacity: 0.8;
+}
+
+.categories-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+nav .categories-container a {
+  font-weight: bolder;
+  text-decoration: none;
+  color: #F4E5D2;
+}
+
+nav .categories-container ul li {
+  margin: 20px 28px;
+  text-align: center;
+}
+
+nav .menu-title {
+  display: inline-block;
+  font-size: xx-large;
+  color: #F4E5D2;
+  text-shadow: 0px 4px 0px #CA5331;
+  -webkit-text-stroke: 0.5px #CA5331
+}
+
+nav .menu-title:hover {
+  color: #F1F2F3;
+}
+
+nav .menu-title:active {
+  transform: translateY(4px);
+  text-shadow: none;
+}
+
+nav .category {
+  display: inline-block;
+  font-size: large;
+  text-shadow: 0px 4px 0px #CA5331;
+  -webkit-text-stroke: 0.5px #CA5331;
+  transition: opacity 0.15s;
+}
+
+nav .category:hover {
+  color: #F1F2F3;
+}
+
+nav .category:active {
+  transform: translateY(4px);
+  text-shadow: none;
+}
+
+.menu-container-1, .menu-container-2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-container-1 .dotted-line, .menu-container-2 .dotted-line {
+  display: block;
+  max-width: 90%;
+  transform: translateY(-30px);
+}
+
+.food-1, .food-2, .food-3, .food-4, .food-5, .food-6 {
+  display: flex;
+  width: 350px;
+  height: 350px;
+  background-color: #F4E5D2;
+  border: solid 3px #CA5331;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #CA5331;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+
+.food-1:hover, .food-2:hover, .food-3:hover, .food-4:hover, .food-5:hover, .food-6:hover {
+  transform: translateY(-20px);
+}
+
+/* .food-1:active, .food-2:active, .food-3:active, .food-4:active, .food-5:active, .food-6:active {
+  background-color: #F1F2F3;
+} */
+
+.food-1 .food-content, .food-2 .food-content, .food-3 .food-content, .food-4 .food-content, .food-5 .food-content, .food-6 .food-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-1 img {
+  display: block;
+  max-width: 60%;
+  transform: translateY(-45px);
+}
+
+.food-2 img {
+  display: block;
+  max-width: 70%;
+  transform: translateY(-60px);
+}
+
+.food-3 img {
+  display: block;
+  max-width: 70%;
+  transform: translateY(-45px);
+}
+
+.food-4 img {
+  display: block;
+  max-width: 50%;
+  transform: translateY(-80px);
+}
+
+.food-5 img {
+  display: block;
+  max-width:60%;
+  transform: translateY(-60px);
+}
+
+.food-6 img {
+  display: block;
+  max-width: 70%;
+  transform: translateY(-60px);
+}
+
+.food-name {
+  transform: translateY(-40px);
+
+}
+
+.food-price {
+  display: flex;
+  gap: 90px;
+  font-size: 1.4rem;
+  transform: translateY(-15px);
+}
+
+.food-price button{
+  color: #CA5331;
+  padding: 5px 20px;
+  border: solid 3px #CA5331;
+  border-radius: 10px;
+  background-color: #F4E5D2;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.food-price button:hover{
+  background-color: #F1F2F3;
+}
+
+.food-price button:active{
+  background-color: #F4E5D2;
+}
+
+.menu-container-2 {
+  padding-bottom: 100px;
+}

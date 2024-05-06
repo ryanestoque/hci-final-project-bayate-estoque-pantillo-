@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Saira Stencil One";
+  src: url(../fonts/SairaStencilOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+/* .saira-stencil-one-regular {
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: auto;
+}
+
+h1, button, p, .header, .container {
+  font-family: "Saira Stencil One", sans-serif;
+}
+
+body {
+  background: #FEF5E9;
+}
+
+nav {
+  padding: 0px;
+  margin: auto;  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 10px 15px;
+  text-align: center;
+}
+
+nav button {
+  font-size: 13px;
+  color: #CA5331;
+  background-color: #F4E5D2;
+  border: solid 3px #CA5331;
+  border-radius: 10px;
+  box-shadow: 0px 4px 0px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+nav button:hover{
+  background-color: #F1F2F3;
+}
+
+nav button:active{
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.left-nav {
+  padding: 4px 25px;
+}
+
+.right-nav {
+  padding: 4px 20px;
+}
+
+.logo {
+  color: #CA5331;
+  font-size: 40px;
+  font-weight: 300;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: opacity 0.15s;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.logo:active {
+  opacity: 0.8;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  font-size: 5rem;
+  color: #F4E5D2;
+  text-shadow: 0px 8px #CA5331;
+  -webkit-text-stroke: 2px #CA5331;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.contact-1, .contact-2, .contact-3 {
+  width: 300px;
+  height: 250px;
+  background-color: #F4E5D2;
+  box-shadow: 10px 10px #CA5331;
+  border: solid 5px #CA5331;
+  border-radius: 20px;
+  font-size: 1.5rem;
+  color: #CA5331;
+}
+
+.contact-1 .icon, .contact-2 .icon {
+  transform: translate(90px, -65px);
+  max-width: 40%;
+}
+
+.contact-3 .icon {
+  transform: translate(100px, -85px);
+  max-width: 35%;
+}
+
+.contact-2 button {
+  padding: 10px 20px;
+  border: solid 3px #CA5331;
+  color: #CA5331;
+  border-radius: 10px;
+  justify-content: left;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.15s;
+}
+
+.contact-2 button:hover {
+  background-color: #F1F2F3;
+}
+
+.contact-2 button:active {
+  opacity: 0.9;
+}
+
+.contact-1 div, .contact-2 div {
+  text-align: left;
+  transform: translate(35px, -60px);
+}
+
+.contact-3 div {
+  text-align: left;
+  transform: translate(35px, -80px);
+  font-size: 1.3rem; 
+  width: 250px;
+}
+
+.contact-3 .address {
+  line-height: 1.6rem;
+}
+
+.mobile-number, .address {
+  font-family: "Montserrat";
+  font-weight: 500;
+}
